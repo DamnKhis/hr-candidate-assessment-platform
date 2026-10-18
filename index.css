@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+@media print {
+  body { background: white !important; }
+  header, footer { display: none !important; }
+  .print\:hidden { display: none !important; }
+  .rounded-2xl { border-radius: 0.5rem; }
+}
+
+/* Smooth scrolling */
+html { scroll-behavior: smooth; }
+
+/* Number input: hide arrows for cleaner look */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  opacity: 1;
+}
+
